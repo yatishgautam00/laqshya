@@ -1,0 +1,277 @@
+$dark-green: #064f32;
+$light-green: #06603b;
+
+.group {
+    width: 100%;
+    font-family: var(--secondary-font);
+
+    .group-wrap {
+        width: 100%;
+
+        .group-heading {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h1 {
+                padding: 8px 0px;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    width: 100%;
+                    height: 2px;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    background: $light-green;
+                }
+
+                &::after {
+                    content: "";
+                    width: 50%;
+                    height: 4px;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    background: $dark-green;
+                }
+
+
+            }
+
+        }
+
+        // FILTER GROUP
+        .filter-group {
+            width: 100%;
+            padding: 40px 0;
+
+            .filter-group-wrap {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 80px;
+
+                .search-bar {
+                    .input-wrap {
+                        margin-top: 10px;
+                        overflow: hidden;
+                        border: 1px solid $dark-green;
+                        width: 200px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        input,
+                        select {
+                            height: 30px;
+                            width: calc(100% - 30px);
+                            border: none;
+                            outline: none;
+                            padding-left: 10px;
+                            color: #064f32;
+                            font-weight: 500;
+
+                            &::placeholder {
+                                color: #064f32;
+                            }
+                        }
+
+                        button {
+                            width: 30px;
+                            height: 30px;
+                            border: none;
+                            outline: none;
+                            background: transparent;
+                            color: #064f32;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            cursor: pointer;
+
+                            &:hover {
+                                background: #064f3229;
+                            }
+                        }
+
+                    }
+
+                }
+            }
+        }
+
+        // participant table
+        .group-table {
+            width: 100%;
+
+            .group-table-wrap {
+                width: 100%;
+                max-height: 50vh;
+                overflow-y: auto;
+                overflow-x: scroll;
+
+                table {
+                    min-width: 100%;
+                    border-collapse: collapse;
+                    border-spacing: 5px;
+                    
+
+                    thead {
+                        width: 100%;
+                        background: #064f32;
+                        font-weight: 700;
+                        color: white;
+                        position: sticky;
+                        top: 0;
+                        left: 0;
+                        z-index: 20;
+
+                        tr {
+                            th {
+                                text-align: left;
+                                padding: 10px;
+                                // &:nth-last-child(1){
+                                //     position: sticky;
+                                //     top: 0;
+                                //     right: 0;
+                                //     background: #064f32;
+                                //     z-index: 10;
+                                // }
+                            }
+                        }
+                    }
+
+                    tbody {
+                        tr {
+                            &:nth-child(even) {
+                                background: #73e1b353;
+
+                            }
+                            .mem-list{
+                                display: flex;
+                                flex-direction: column;
+                                gap: 10px;
+                            }
+
+                            td {
+                                text-align: left;
+                                height: 100%;
+                                padding: 0 8px;
+                            }
+
+                            .action-btn {
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+                                z-index: 1;
+                                gap: 15px;
+                                height: 100%;
+                               
+
+                                button,
+                                input {
+                                    background: none;
+                                    outline: none;
+                                    border: none;
+                                    padding: 6px;
+                                    border-radius: 3px;
+                                    color: white;
+                                    font-size: 18px;
+                                }
+                                button{
+                                    &:nth-child(1){
+                                        border:2px solid #064f32;
+                                        color: #064f32;
+                                        padding: 3px 6px;
+                                        font-size: 12px;
+                                    }
+                                    &:nth-child(2){
+                                        // background: rgb(209, 177, 17);
+                                        color: #064f32;
+                                    }
+                                    &:nth-child(3){
+                                        // background: rgb(209, 177, 17);
+                                        color: rgb(235, 62, 62);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // table config
+        .table-config{
+            width: 100%;
+            .table-config-wrap{
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                .pagination-btn{
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    gap: 10px;
+                    margin-right:25px ;
+                    button{
+                        width: 25px;
+                        height: 25px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        outline: none;
+                        border: none;
+                        background: #064f32;
+                        color: white;
+                        border-radius: 3px;
+                        
+                    }
+                    h1{
+                        font-size: 25px;
+                    }
+                   
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:991px) {
+    .group{
+        .group-wrap{
+            .group-heading{
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+                h1{
+                    font-size: 20px;
+                }
+            }
+            .filter-group{
+                .filter-group-wrap{
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 15px;
+                    justify-content: flex-start;
+                }
+            }
+
+            .group-table{
+                .group-table-wrap{
+                    max-height: 50vh;
+                }
+            }
+           .table-config{
+            padding-bottom: 60px;
+           }
+        }
+    }
+    
+}

@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.abcc3b91.css",
+    "main.js": "/static/js/main.69033a05.js",
+    "static/media/WhatsApp Audio 2023-03-18 at 12.50.14 AM.mp3": "/static/media/WhatsApp Audio 2023-03-18 at 12.50.14 AM.f286fe78075cae8f8a0c.mp3",
+    "static/media/mixkit-click-error-1110.wav": "/static/media/mixkit-click-error-1110.678c6c3fc0f27f3bd438.wav",
+    "static/media/mixkit-high-tech-bleep-confirmation-2520.wav": "/static/media/mixkit-high-tech-bleep-confirmation-2520.512b2b4a3e8236a3216e.wav",
+    "static/media/mixkit-click-melodic-tone-1129.wav": "/static/media/mixkit-click-melodic-tone-1129.b3bbfd78e0fc52210661.wav",
+    "static/media/Sman.ttf": "/static/media/Sman.fcba438bef1049a04a96.ttf",
+    "static/media/data-reveal-sound-6460.mp3": "/static/media/data-reveal-sound-6460.381e3c73154d94d595c8.mp3",
+    "static/media/SamarkanNormal.woff": "/static/media/SamarkanNormal.28b5cade04c95fae47a6.woff",
+    "static/media/SamarkanNormal.woff2": "/static/media/SamarkanNormal.5ae38ee34838206a0eb9.woff2",
+    "static/media/Redriver.woff": "/static/media/Redriver.21a876e7a0155acb7dc0.woff",
+    "static/media/Redriver.woff2": "/static/media/Redriver.da7ec562fb45ab5734bc.woff2",
+    "static/media/Ailerons-Regular.woff": "/static/media/Ailerons-Regular.820d5589e41a5e7ee81d.woff",
+    "static/media/Ailerons-Regular.woff2": "/static/media/Ailerons-Regular.72ddd5c2e91db6e307cf.woff2",
+    "static/media/Anurati-Regular.woff": "/static/media/Anurati-Regular.f500f4b0365151684320.woff",
+    "static/media/Anurati-Regular.woff2": "/static/media/Anurati-Regular.3aecc46138093421fd9a.woff2",
+    "index.html": "/index.html",
+    "main.abcc3b91.css.map": "/static/css/main.abcc3b91.css.map",
+    "main.69033a05.js.map": "/static/js/main.69033a05.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.abcc3b91.css",
+    "static/js/main.69033a05.js"
+  ]
+}

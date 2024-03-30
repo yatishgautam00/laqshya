@@ -1,0 +1,125 @@
+$dark-green: #064f32;
+$light-green: #06603b;
+
+.createpost {
+    width: 100%;
+    font-family: var(--secondary-font);
+
+    .createpost-wrap {
+        width: 100%;
+
+        .createpost-heading {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h1 {
+                padding: 8px 0px;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    width: 100%;
+                    height: 2px;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    background: $light-green;
+                }
+
+                &::after {
+                    content: "";
+                    width: 50%;
+                    height: 4px;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    background: $dark-green;
+                }
+
+
+            }
+
+        }
+
+        .addpost-form{
+            width: 100%;
+            margin-top: 50px;
+            form{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                .left-form{
+                    width: 50%;
+                    label{
+                        width: 100%;
+                        height: 300px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        background: #0ad9834e;
+                        text-align: center;
+                        font-size: 2vw;
+                        border: 2px dashed $dark-green;
+                        box-sizing: border-box;
+                        &:hover{
+                            border: 3px dashed $dark-green;
+                        }
+                        p{
+                            font-size: 15px;
+                        }
+                    }
+                    
+                }
+                .right-form{
+                    padding: 20px;
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+
+                    .row{
+                        width: 100%;
+                       
+                        input{
+                            width: 100%;
+                            height: 40px;
+                            border: none;
+                            outline: none;
+                            padding: 5px 0;
+                            border-bottom: 2px solid $dark-green;
+
+                            &::placeholder{
+                                color: #064f32;
+                            }
+                        }
+
+                        button{
+                            width: 100%;
+                            height: 40px;
+                            background: #064f32;
+                            color: white;
+                            font-weight: 700;
+                            border: none;
+                            outline: none;
+                            cursor: pointer;
+
+                            &:hover{
+                                border: 1px solid $dark-green;
+                                background: transparent;
+                                color: $dark-green;
+
+                            }
+                        }
+                    }
+                    
+                }
+            }
+
+        }
+
+    }
+}

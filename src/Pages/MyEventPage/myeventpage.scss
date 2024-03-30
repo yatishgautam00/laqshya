@@ -1,0 +1,242 @@
+ .myEventPage {
+     width: 100%;
+     height: 100vh;
+     background: url("https://ik.imagekit.io/egjzyz51e/20230401_133643_0000-removebg-preview.png?updatedAt=1680336738013");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+
+     .myEventPage-wrap {
+         width: 100%;
+         height: 100%;
+         //  border: 1px solid rosybrown;
+         padding: 0px 20px;
+         box-sizing: border-box;
+         overflow-x: hidden;
+         overflow-y: auto;
+         position: relative;
+
+         .heading {
+             width: 100%;
+             height: 80px;
+             position: sticky;
+             top: 0;
+             left: 0;
+              background: black;
+             //  border: 1px solid magenta;
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+             border-bottom: 2px solid var(--secondary-color);
+
+             h1 {
+                 font-size: 30px;
+                 color: var(--secondary-color);
+                 font-family: var(--redriver);
+                 text-transform: uppercase;
+             }
+             a{
+                padding: 5px 15px;
+                background: transparent;
+                border:1px solid var(--secondary-color);
+                color: var(--secondary-color);
+                text-decoration: none;
+                font-family: sans-serif;
+             }
+         }
+
+         .myevent-heading {
+             width: 100%;
+             display: flex;
+             justify-content: flex-start;
+             align-items: center;
+             color: rgb(209, 209, 209);
+             // gap: 20px;
+
+             .user-details {
+                 width: 100%;
+                 display: flex;
+                 justify-content: flex-start;
+                 align-items: flex-start;
+                 flex-direction: column;
+                 // border: 1px solid navajowhite;
+                 margin-top: 40px;
+                 gap: 8px;
+
+
+                 li {
+                     list-style: none;
+                     font-size: 18px;
+                     font-family: var(--secondary-font);
+                     // border: 1px solid darkblue5;
+                 }
+             }
+         }
+
+         .myevent-details-cards {
+             width: 100%;
+             margin: 40px 0;
+
+             h1 {
+                 font-family: sans-serif;
+                 font-size: 2vw;
+                 color: var(--secondary-color);
+                 display: flex;
+                 justify-content: flex-start;
+                 gap: 25px;
+                 align-items: center;
+                 .refrsh-btn{
+                    width: 25px;
+                    height: 25px;
+                    font-size: 30px;
+                    background: transparent;
+                    border: none;
+                    outline: none;
+                    color: var(--secondary-color);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    &.active{
+                        animation: refrsh 1s infinite ease;
+                    }
+                 }
+                 .shuff-btn{
+                    width: 25px;
+                    height: 25px;
+                    font-size: 30px;
+                    background: transparent;
+                    border: none;
+                    outline: none;
+                    color: var(--secondary-color);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: 1s ease;
+                    &.active{
+                        rotate: 180deg;
+                        transition: 1s ease;
+                    }
+                 }
+
+             }
+
+             .myevent-group-grid {
+                 width: 100%;
+                 display: grid;
+                 padding: 15px;
+                 grid-template-columns: repeat(4, 350px);
+                 grid-template-rows: auto;
+                 gap: 15px;
+
+                 .myeve-card {
+                     height: 250px;
+                     background: rgba(35, 35, 35, 0.95);
+                     padding: 10px;
+                     color: aliceblue;
+                     font-family: sans-serif;
+                     overflow: hidden;
+                     border-radius: 15px;
+
+                     ul {
+                         width: 100%;
+                         height: 100%;
+                         display: flex;
+                         flex-direction: column;
+                         justify-content: space-evenly;
+                         align-items: flex-start;
+
+                         li {
+                             display: flex;
+                             justify-content: flex-start;
+                             align-items: center;
+
+                             .success-dot {
+                                 width: 10px;
+                                 height: 10px;
+                                 background: rgb(45, 255, 45);
+                                 border-radius: 50%;
+                                 box-shadow: 0 0 5px rgba(223, 255, 223, 0.884);
+                                 margin-left: 10px;
+                             }
+
+                             span {
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+                                 .error-dot {
+                                     width: 10px;
+                                     height: 10px;
+                                     background: rgb(255, 45, 45);
+                                     border-radius: 50%;
+                                     box-shadow: 0 0 5px rgba(255, 223, 223, 0.884);
+                                     margin-left: 10px;
+                                 }
+
+                             }
+
+                             button {
+
+                                 padding: 5px 15px;
+                                 display: flex;
+                                 justify-content: center;
+                                 align-items: center;
+                                 border: 1px solid rgb(255, 82, 82);
+                                 outline: none;
+                                 color: rgb(255, 82, 82);
+                                 background: transparent;
+                             }
+                             input{
+                                width: 130px;
+                                padding: 5px 10px;
+                                border: 1px solid var(--secondary-color);
+                                color: white;
+                                outline: none;
+                                background: transparent;
+                                margin-right: 10px;
+
+                             }
+                         }
+                     }
+                 }
+
+             }
+         }
+     }
+ }
+
+ @keyframes refrsh {
+    0%{
+        rotate:0deg;
+
+    }
+    100%{
+        rotate: 360deg;
+    }
+    
+ }
+
+  @media screen and (max-width:991px) {
+
+     .myEventPage{
+         .myEventPage-wrap{
+            .heading{
+                height: 60px;
+                h1{
+                    font-size: 20px;
+                }
+            }
+             .myevent-details-cards{
+                h1{
+                    font-size: 25px;
+                }
+                .myevent-group-grid{
+                   padding: 20px 0;
+                   grid-template-columns: 350px;
+
+   
+                }
+             }
+         }
+     }
+
+  }

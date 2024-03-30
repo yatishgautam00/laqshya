@@ -1,0 +1,174 @@
+.contact-page {
+    width: 100%;
+    font-family: var(--secondary-font);
+
+    .contact-wrap {
+        width: 100%;
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        .contact-banner {
+            width: 100%;
+            height: 60vh;
+            // border: 1px solid white;
+            background: url('https://ik.imagekit.io/dexo68yudb/12-LandingPage_Banner_2200X560_contact.jpg?updatedAt=1678534609332');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            position: relative;
+
+            .greet {
+
+                // border: 1px solid white;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin-left: 50px;
+
+                // margin-top: 10%;
+
+                h1 {
+                    color: var(--secondary-color);
+                    text-align: center;
+                    font-size: 50px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                }
+            }
+
+            .contact-detail {
+                width: 100%;
+               
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin-top: 50px;
+                background: linear-gradient(#1e1a1e34 75.57%);
+                position: absolute;
+                bottom: -40%;
+                left: 0;
+                flex-wrap: wrap;
+                
+                .con-icon{
+                    font-size: 50px;
+                    // position: absolute;
+                    // top: 50%;
+                    // left: -10%;
+                    // translate: 0 -50% 0;
+                    color: rgba(241, 197, 84, 0.496); 
+
+                    
+                    
+                    
+                }
+    
+    
+                .address {
+                    width: 50%;
+                    height: 300px;
+                    // border: 1px solid white;
+                    
+                    // padding: 20px;
+                    display: flex;
+                    // flex-direction: column;
+                    justify-content: center;
+                    align-items:flex-end;
+                    .address-card{
+
+                        padding: 24px;
+                        height: 70%;
+                        width: 70%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content:center;
+                        gap: 20px;
+                        background:#1e091e;
+                        color: white;
+                        font-weight: 800;
+                        position: relative;
+                    }
+
+    
+    
+                    h3 {
+                        color: rgb(204, 202, 198);;
+                    }
+                }
+    
+                .social-media {
+                    width: 50%;
+                    height: 300px;
+                    // border: 1px solid white;
+                    
+                    // padding: 20px;
+                    display: flex;
+                    // flex-direction: column;
+                    justify-content: center;
+                    align-items:flex-end;
+                    .social-card{
+                        padding: 24px;
+                        height: 70%;
+                        width: 70%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content:center;
+                        gap: 20px;
+                        background:#1e091e;
+                        color: white;
+                        font-weight: 800;
+                        position: relative;
+
+                        a{
+                            text-decoration: none;
+                            color: rgb(204, 202, 198);
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+
+@media screen and (max-width:991px ) {
+    .contact-page{
+        .contact-wrap{
+            .contact-banner{
+                height: auto;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                .greet{
+                    margin-left: 0;
+                    margin-top: 40%;
+                    h1{
+                        font-size: 20px;
+                    }
+                }
+                .contact-detail{
+                    position: relative;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 20px;
+                    padding: 20px 0;
+                    .address{
+                        width: 100%;
+                        height: auto;
+                    }
+                    .social-media{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+    
+    
+}

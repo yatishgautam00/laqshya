@@ -1,0 +1,173 @@
+.forgotpass {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    .forgotpass-wrap {
+        width: 100%;
+        height: 100%;
+        // background: url('https://ik.imagekit.io/dexo68yudb/Sky_Blue_90s_Anime_Desktop_Wallpaper.png?updatedAt=1679922409463');
+        background-size: cover;
+        background-position: center;
+
+        .nav {
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 10px gray;
+
+            h1 {
+                font-family: 'samarkan';
+                color: red;
+
+            }
+
+        }
+
+        .login-form {
+            width: 100%;
+            height: calc(100% - 60px);
+            display: flex;
+            justify-content: center;
+            // border: 1px solid;
+            align-items: center;
+
+            form {
+                width: 30%;
+                padding: 15px;
+                border: 2px solid white;
+                box-sizing: border-box;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                gap: 15px;
+
+                h1 {
+                    font-family: sans-serif;
+                    
+                    color: #c1c1c1af;
+                }
+                h3{
+                    font-family: sans-serif;
+                    color: rgb(165, 165, 165);
+                }
+
+
+                .row {
+                    width: 100%;
+                    height: 35px;
+                    // border-radius: 25px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .icon-input-wrap {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        border-bottom: 2px solid rgba(141, 141, 141, 0.64);
+                        gap: 10px;
+
+
+                        input {
+                            width: 100%;
+                            height: 100%;
+                            border: none;
+                            outline: none;
+                            background: transparent;
+                            box-sizing: border-box;
+
+                            // padding: 0 10px;
+                            &::placeholder {
+                                color: rgb(163, 163, 163);
+                            }
+
+                        }
+                    }
+
+
+                    .register-btn {
+                        width: 100%;
+                        height: 35px;
+                        background: transparent;
+                        border: none;
+                        outline: none;
+                        color: white;
+                        border: 1px solid var(--secondary-color);
+                        border-radius: 5px;
+                        font-weight: 800;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        &:hover {
+                            background: transparent;
+                            color: #c8c8c8;
+                            border: 1px solid #e4e4e4;
+                        }
+
+
+                    }
+
+                    .password-wrap {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        border-bottom: 2px solid red;
+                        gap: 10px;
+
+                        input {
+                            width: 100%;
+                            height: 100%;
+                            border: none;
+                            outline: none;
+                            background: transparent;
+                            box-sizing: border-box;
+
+                            // padding: 0 10px;
+                            &::placeholder {
+                                color: black;
+                            }
+
+                        }
+                        button {
+                            width: 35px;
+                            height: 100%;
+                            background: transparent;
+                            border: none;
+                            outline: none;
+                            color: green;
+
+                        }
+
+                    }
+
+                }
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-width:991px) {
+    .Adminlogin{
+        .adminlogin-wrap{
+            .login-form{
+                form{
+                    width: 95%;
+                }
+            }
+
+        }
+    }
+    
+}
